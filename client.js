@@ -1317,10 +1317,11 @@ if (channelAddInput) {
   });
 }
 
-setInterval(function () {
-  if (currentTab === 'feed' || currentTab === 'channels') refreshDataAndRender();
-  loadCredits();
-}, 5 * 60 * 1000);
+// ✅ AUTO-REFRESH DISABILITATO - usa il pulsante manuale "🔄 Aggiorna views ora"
+// setInterval(function () {
+//   if (currentTab === 'feed' || currentTab === 'channels') refreshDataAndRender();
+//   loadCredits();
+// }, 5 * 60 * 1000);
 
 setInterval(function () {
   refreshSavedViewsManually({ silent: true, source: 'auto' });

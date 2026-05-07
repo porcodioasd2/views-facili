@@ -2318,7 +2318,7 @@ export function getHtml() {
     <button class="manual-refresh-btn" id="manualRefreshBtn" title="Aggiorna subito le views">🔄 Aggiorna views ora</button>
     <div class="refresh-info">
       <span id="statsInfo"></span>
-      Auto-refresh ogni 5 min &nbsp;|&nbsp; Prossimo: <span class="countdown" id="countdown">5:00</span>
+      ✅ Refresh manuale &nbsp;|&nbsp; Prossimo: <span class="countdown" id="countdown">5:00</span>
     </div>
     <div class="search-bar">
       <input type="text" id="shortLinkInput" placeholder="Incolla link Short (es. https://youtube.com/shorts/abc123)" />
