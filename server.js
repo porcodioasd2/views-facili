@@ -2446,7 +2446,7 @@ export function startServer() {
     throw err;
   });
   const PORT = process.env.PORT || 3000;
-  const HOST = process.env.HOST || (process.env.RAILWAY_ENVIRONMENT ? '0.0.0.0' : '127.0.0.1');
+  const HOST = process.env.HOST || (process.env.NODE_ENV === 'production' ? '0.0.0.0' : '127.0.0.1');
   
   // Controlla e resetta crediti ogni minuto a mezzanotte UTC
   setInterval(checkAndResetCreditsIfMidnight, 60000);
